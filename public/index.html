@@ -1,0 +1,23 @@
+<html ng-app="token-demo">
+    <head>
+        <title>JSON web tokens demo</title>
+    </head>
+    <body ng-controller="mainCtrl">
+
+        <input ng-model="username" /><br>
+        <input ng-model="password" /><br>
+        <button ng-click="login(username, password)">
+            Login
+        </button><br>
+
+        User: {{user}}<br><br>
+
+        <button ng-click="getUser()">get Secret Data</button><br>
+        Data: {{data}}
+
+
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="./app.js"></script>
+    </body>
+
+</html>
